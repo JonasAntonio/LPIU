@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function validacao(){
+                var senha = document.form1.senha.value;
+                var senha2 = document.form1.senha2.value;
+                var erro = document.getElementById("erro");
+                if(senha == "" && senha2 == ""){
+                    erro.innerHTML = "Você tem que digitar a sua senha!";
+                    document.form1.senha.focus();
+                    return false;
+                }
+                if(senha != senha2){
+                    erro.innerHTML = "Confirmação de senha incorreta!";
+                    document.form1.senha.focus();//passa o foco para o campo da senha 1
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Login</h2>
+        <form name="form1" action="pagina.html" onsubmit="return validacao()">
+            Senha: <input type="password" name="senha" size="20" /><p>
+            Confirme a senha: <input type="password" name="senha2" size="20" /><p>
+            <input type="submit" value="Enviar">
+        </form>
+        <font color="red"><span id="erro"></span></font>
+    </body>
+</html>

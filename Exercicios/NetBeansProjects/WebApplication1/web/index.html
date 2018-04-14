@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div style="border: 1px solid black; width: 500px">
+            <form name="form1" method="get" action="pagina2.html" enctype="text/plain">
+                Nome: <input type="text" name="nome"/><br/><br/>
+                Senha: <input type="password" name="senha"/><br/><br/>
+                Sistema Operacional:
+                    <input type="checkbox" name="os"/>Windows 7
+                    <input type="checkbox" name="os"/>Windows 10
+                    <input type="checkbox" name="os"/>Mac OS
+                    <input type="checkbox" name="os"/>Linux<br/><br/>
+                Processador: 
+                    <input type="radio" name="proc" value="1" />Intel
+                    <input type="radio" name="proc" value="2"/>AMD 
+                    <input type="radio" name="proc" value="3"/>Cyrix<br/><br/>
+                Profissão: <select name="profissao" size="2">
+                    <option value="1" name="an">Analista de Sistemas</option>
+                    <option value="2" name="an">Analista de Suporte</option>
+                </select><br/><br/>
+                Comentários:<textarea name="coment" rows="4" cols="50">Teste de Formulário em Aula</textarea><br/><br/>
+                    <input type="submit" value="Enviar dados" name="enviar" />
+                    <input type="reset" value="Limpa dados" name="limpar"/>
+            </form>
+        </div>
+    </body>
+</html>
